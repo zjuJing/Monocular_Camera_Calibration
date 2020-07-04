@@ -50,7 +50,7 @@ void CameraCalibration::Calibrate() {
     cout << "\nimage height: " << static_cast<int>(image_size.height);
     cout << "\nintrinsic matrix:" << intrinsic_matrix;
     cout << "\ndistortion coefficients: " << dist_coeffs << "\n" << endl;
-    for (int i = 0; i <= object_points.size(); i++) {
+    for (int i = 0; i < object_points.size(); i++) {
         cout << "rvecs: " << rvecs[i] << endl;
         cout << "tvecs: " << tvecs[i] << endl;
     }

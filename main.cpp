@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
             "{board_height|9|height of board}"
             "{undistortion_flag flag||whether do undistort}";
     cv::CommandLineParser parser = cv::CommandLineParser(argc, argv, keys);
-    if (argc <= 5) {
+    if (argc < 4) {
         cout << "----- Calibrate a camera -----\n"
              << "Call:\ncamera_calibration.exe {file_path} {board_width} {board_height} {undistortion_flag}\n"
              << "Example:\ncamera_calibration.exe -file_path=./left 6 9 -flag=1" << endl;
